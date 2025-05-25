@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Et Pradeep Darshana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000045;
+      margin: 0;
+      padding: 0;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: 50%;
+    }
+    .slide img {
+      width: 90%;
+      height: 110%;
+      border-radius: 10px;
+    }
+    .fade {
+      animation: fade 3s ease-in-out;
+
+    }
+    @keyframes fade {
+      from { opacity: 0.5; }
+      to { opacity: 3; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="1000004180.jpg" alt="Image 1">
+  </div>
+  <div class="slide fade">
+    <img src="1000004181.jpg" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="1000004182.jpg" alt="Image 3">
+  </div>
+</div>
+
+<script>
+  let slideIndex = 10;
+  showSlides();
+  
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 5; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 4000); // Change image every 3 seconds
+  }
+</script>
+ <a href="https://www.facebook.com/share/16EanyaTrd/" target="_blank">
+  <img src="fb.jpg" alt="Description" style="width:80px; margin-left:1000px;">
+</a>
+
+ <a href="https://wa.link/uu4f5s" target="_blank">
+  <img src="app.jpg" alt="Description" style="width:80px; margin-left:1000px;">
+</a>
+
+
+
+</body>
+</html>

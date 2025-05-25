@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Your O/L Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+     .hero {
+             background: url('luxurious-car-parked-highway-with-illuminated-headlight-sunset.jpg') center center/cover no-repeat;
+             color:#65b4b4 ;
+             padding: 70px 20px;
+             text-align: left;
+             position: relative;
+        form {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 10px;
+            
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row > div {
+            flex: 1;
+        }
+
+        input[type="submit"] {
+            background-color: #00aaff;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #008fcc;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+            }
+        }
+
+        .message {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+
+<form method="POST" action="results.php">
+    <h2><center>Send Your A/L Results</h2>
+
+    <div class="form-row">
+        <div>
+            <label for="name">Name *</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="index_no">Index No *</label>
+            <input type="text" name="index_no" id="index_no" required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div>
+            <label for="school">School *</label>
+            <input type="text" name="school" id="school" required>
+        </div>
+        <div>
+            <label for="class">Class</label>
+            <select name="class" id="class">
+                <option value="Apex ">Apex </option>
+                <option value="Southern">Southern</option>
+                <option value="Sahatra">Sahathra</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div>
+            <label for="contact">Contact Number *</label>
+            <input type="text" name="contact" id="contact" required>
+        </div>
+        <div>
+            <label for="result">Result *</label>
+            <select name="result" id="result" required>
+                <option value="AAA">AAA</option>
+                <option value="AAB">AAB</option>
+                <option value="AAC">AAC</option>
+                <option value="AAS">AAS</option>
+                <option value="AAW">AAW</option>
+                 <option value="AAA">ABB</option>
+                <option value="AAB">BBB</option>
+                <option value="AAC">BBC</option>
+                <option value="AAS">BCC</option>
+                <option value="CCC">CCC</option>
+                <option value="AAA">CCS</option>
+                <option value="AAB">CSS</option>
+                <option value="AAC">CSW</option>
+                <option value="AAW">SSS</option>
+                
+            </select>
+              <label for="result for et">Result for et *</label>
+              <select name="resultet" id="resultet" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="S">S</option>
+                <option value="W">W</option>
+                
+            </select>  
+        </div>
+        <div>
+            <label for="medium">Medium *</label>
+            <select name="medium" id="medium" required>
+                <option value="Sinhala">Sinhala</option>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+        </div>
+    </div>
+
+    <center><input type="submit" value="Submit My Result"></center>
+</form>
+
+</body>
+</html>

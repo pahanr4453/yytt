@@ -1,0 +1,89 @@
+   nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+  }
+    table,th,td{
+    	border-collapse: separate;
+    	border-spacing:3px;
+    	width:50px;
+    	border: 1px double black;
+    	caption-side:top;
+    	height:40px;
+    	text-align:center
+    }
+    p{
+    	font-family: arial;
+    	font-size:60px;
+    	font-weight:bold;
+    	color:lightyellow;
+    	text-shadow:3px 3px 4px;
+    }
+    div{
+
+    	width:300px;
+    	padding:80px;
+    	height:300px;
+    	margin:100px;
+    	border:10px ;
+    	border-color:red ;
+    	border-top-left-radius:130px;
+    	border-top-right-radius: 10px;
+    	border-bottom-left-radius: 10px;
+    	border-bottom-right-radius: 130px;
+    	border-style:double;
+    }
+    .divv{
+
+    	width:190px;
+    	padding:50px;
+    	height:160px;
+    	margin:10px;
+    	border:10px ;
+    	border-color:red ;
+    	border-top-left-radius:130px;
+    	border-top-right-radius: 10px;
+    	border-bottom-left-radius: 10px;
+    	border-bottom-right-radius: 130px;
+      border-style:double;
+    }
+   
+   
+ a{ 
+    font-size: 22px;
+    text-decoration:none;
+    color: ff00ff;
+  }
+    a:link{
+    	color:black;
+    }
+    a:visited{
+    	color:pink;
+    }
+    a:hover{
+    	color:orange;
+    }
+    a:active{
+    	color: grey;
+    }
+
+dd{
+	 color:#ffffff;
+}
+
+body{
+      background-color:#d5d8dc ;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      
+      color: #245534;
+    }
+    .hero {
+      background: url('hardhat-light-bulbs.jpg') center center/cover no-repeat;
+      color: white;
+      padding: 70px 20px;
+      text-align: left;
+      position: relative;
+    }
+  
+

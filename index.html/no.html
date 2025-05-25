@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Portfolio</title>
+  
+   <link rel="stylesheet" type="text/CSS" HREF="css.css">
+</head>
+<body>
+
+  <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+  <div class="sidebar" id="sidebar">
+    <h2><br><br>My Site</h2>
+     <a href="Ai.html"><li class="flex items-center gap4 px-6 py-4 rounded hover:bg-gray-300 hover:text-black cursor-pointer">🏠 <span>Home</span></li></a>
+      <a href="Ai.html"><li class="flex items-center gap-4 px-6 py-4 rounded hover:bg-gray-300 hover:text-black cursor-pointer">>> <span>About Us</span></li></a>
+      <a href="animi.html"><li class="flex items-center gap-3 px-4 py-4 rounded hover:bg-gray-300 hover:text-black cursor-pointer">📖 <span>A/L 2025</span></li></a>
+      <a href="animi.html"><li class="flex items-center gap-3 px-4 py-4 rounded hover:bg-gray-300 hover:text-black cursor-pointer">📖 <span>A/L 2026</span></li></a>
+      <a href="animi.html"><li class="flex items-center gap-3 px-4 py-4 rounded hover:bg-gray-300 hover:text-black cursor-pointer">📖 <span>A/L 2027</span></li></a>
+      <a href="animi.html"><li class="flex items-center gap-3 px-4 py-7 rounded hover:bg-gray-300 hover:text-black cursor-pointer">📷 <span>A/L Video Packs</span></li></a>
+      <a href="yyt.html"><li class="flex items-center gap-3 px-4 py-4 rounded hover:bg-gray-300 hover:text-black cursor-pointer">📖 <span>Practical</span></li></a>
+      <a href="Page1.html"><li class="flex items-center gap-3 px-5 py-5 rounded hover:bg-gray-300 hover:text-black cursor-pointer">📖 <span>Results</span></li></a>
+      <a href=""><li class="flex items-center gap-3 px-5 py-5 rounded hover:bg-gray-300 hover:text-black cursor-pointer">👤<span>Profile</span></li></a>
+  </div>
+
+  <div class="main" id="mainContent">
+    <section id="home">
+      <h1>Welcome</h1>
+      <p>Most Popular ET Class!.</p>
+    </section>
+
+    <section id="about">
+      <h2>Avaliable Classes</h2>
+      
+    </section>
+
+    <section id="projects">
+      <div class="cards">
+        <div class="card">
+          <h3> A/L 2025</h3>
+          <p>⭕theory⭕<br>⭕Revisions⭕<br>⭕Patricals⭕</p>
+        </div>
+        <div class="card">
+          <h3> A/L 2026</h3>
+          <p>⭕theory⭕<br>⭕Revisions⭕<br>⭕Patricals⭕</p>
+        </div>
+        <div class="card">
+          <h3> A/L 2027</h3>
+          <p>⭕theory⭕<br>⭕Revisions⭕<br>⭕Patricals⭕</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Email me at: <strong>etpradeepdarshana@gmail.com</strong></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Pahan. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+      document.getElementById('mainContent').classList.toggle('active');
+    }
+
+    // Animation on scroll
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

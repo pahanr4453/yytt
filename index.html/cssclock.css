@@ -1,0 +1,29 @@
+clock {
+      background: #ab44e3;
+      padding: 40px 60px;
+      border-radius: 0px;
+      box-shadow: 0 8px 0.3px #ffff;
+      color: #fff;
+      font-size: 48px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    
+    }
+    h1 {
+      font-size: 3rem;
+      color: white;
+      opacity: 0;
+      animation: slideFadeIn 2s ease forwards;
+    }
+
+    @keyframes slideFadeIn {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
